@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard CurrencyCulture="en-US">
+  <Title Text="Dashboard" />
+  <DataConnections>
+    <DataConnection Name="nwindConnection" ProviderKey="Access97" ConnectionString="XpoProvider=MSAccess;Provider=Microsoft.Jet.OLEDB.4.0;Mode=Share Deny None;data source=..\..\Data\nwind.mdb;user id=;password=;">
+      <Parameters>
+        <Parameter Name="database" Value="..\..\Data\nwind.mdb" />
+        <Parameter Name="read only" Value="1" />
+        <Parameter Name="generateConnectionHelper" Value="false" />
+      </Parameters>
+    </DataConnection>
+  </DataConnections>
+  <DataSources>
+    <DataSource Name="Data Source 1">
+      <DataProvider DataConnection="nwindConnection" SupportSql="true">
+        <Selection>
+          <Table Name="SalesPerson">
+            <Columns>
+              <Column Name="CategoryName" />
+              <Column Name="Country" />
+              <Column Name="Discount" />
+              <Column Name="Extended Price" />
+              <Column Name="FirstName" />
+              <Column Name="LastName" />
+              <Column Name="OrderDate" />
+              <Column Name="OrderID" />
+              <Column Name="ProductName" />
+              <Column Name="Quantity" />
+              <Column Name="Sales Person" />
+              <Column Name="UnitPrice" />
+            </Columns>
+          </Table>
+        </Selection>
+      </DataProvider>
+    </DataSource>
+  </DataSources>
+</Dashboard>
