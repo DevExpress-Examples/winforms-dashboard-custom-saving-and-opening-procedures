@@ -1,6 +1,4 @@
-﻿Imports Microsoft.VisualBasic
-Imports System
-Namespace Dashboard_LoadingAndSaving
+﻿Namespace Dashboard_LoadingAndSaving
 	Partial Public Class Form1
 		''' <summary>
 		''' Required designer variable.
@@ -26,26 +24,34 @@ Namespace Dashboard_LoadingAndSaving
 		''' </summary>
 		Private Sub InitializeComponent()
 			Me.dashboardDesigner1 = New DevExpress.DashboardWin.DashboardDesigner()
+			DirectCast(Me.dashboardDesigner1, System.ComponentModel.ISupportInitialize).BeginInit()
 			Me.SuspendLayout()
 			' 
 			' dashboardDesigner1
 			' 
+			Me.dashboardDesigner1.AllowMaximizeAnimation = True
+			Me.dashboardDesigner1.AllowMaximizeDashboardItems = True
+			Me.dashboardDesigner1.AllowPrintDashboard = True
+			Me.dashboardDesigner1.AllowPrintDashboardItems = True
 			Me.dashboardDesigner1.Dock = System.Windows.Forms.DockStyle.Fill
 			Me.dashboardDesigner1.Location = New System.Drawing.Point(0, 0)
 			Me.dashboardDesigner1.Name = "dashboardDesigner1"
-			Me.dashboardDesigner1.Size = New System.Drawing.Size(789, 477)
+			Me.dashboardDesigner1.Size = New System.Drawing.Size(790, 568)
 			Me.dashboardDesigner1.TabIndex = 0
-'			Me.dashboardDesigner1.DashboardSaving += New DevExpress.DashboardWin.DashboardSavingEventHandler(Me.dashboardDesigner1_DashboardSaving);
-'			Me.dashboardDesigner1.DashboardOpening += New DevExpress.DashboardWin.DashboardOpeningEventHandler(Me.dashboardDesigner1_DashboardOpening);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.dashboardDesigner1.DashboardSaving += new DevExpress.DashboardWin.DashboardSavingEventHandler(this.dashboardDesigner1_DashboardSaving);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.dashboardDesigner1.DashboardOpening += new DevExpress.DashboardWin.DashboardOpeningEventHandler(this.dashboardDesigner1_DashboardOpening);
 			' 
 			' Form1
 			' 
 			Me.AutoScaleDimensions = New System.Drawing.SizeF(6F, 13F)
 			Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-			Me.ClientSize = New System.Drawing.Size(789, 477)
+			Me.ClientSize = New System.Drawing.Size(790, 568)
 			Me.Controls.Add(Me.dashboardDesigner1)
 			Me.Name = "Form1"
 			Me.Text = "Form1"
+			DirectCast(Me.dashboardDesigner1, System.ComponentModel.ISupportInitialize).EndInit()
 			Me.ResumeLayout(False)
 
 		End Sub
