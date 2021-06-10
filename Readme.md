@@ -15,3 +15,7 @@ Run the application and click the **File -> Open** button to load the dashboard 
 
 ![screenshot](/images/screenshot.png)
 
+## Documentation
+
+- [Save and Load a Dashboard](https://docs.devexpress.com/Dashboard/15405)
+
