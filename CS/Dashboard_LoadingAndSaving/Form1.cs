@@ -1,11 +1,9 @@
-﻿using DevExpress.LookAndFeel;
+using DevExpress.LookAndFeel;
 using DevExpress.XtraEditors;
 using System.Windows.Forms;
 
-namespace Dashboard_LoadingAndSaving
-{
-    public partial class Form1 : DevExpress.XtraEditors.XtraForm
-    {
+namespace Dashboard_LoadingAndSaving {
+    public partial class Form1 : DevExpress.XtraEditors.XtraForm {
         string filePath = @"..\..\Data\DashboardDefinition.xml";
 
         public Form1() {
@@ -36,8 +34,7 @@ namespace Dashboard_LoadingAndSaving
             dashboardDesigner1.LoadDashboard(filePath);
             e.Handled = true;
         }
-        public DialogResult InvokeMessageBox()
-        {
+        public DialogResult InvokeMessageBox() {
             return XtraMessageBox.Show(new UserLookAndFeel(dashboardDesigner1),
                                        "Do you want to save the dashboard to the default location?",
                                        "Save As",
